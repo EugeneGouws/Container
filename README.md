@@ -78,7 +78,7 @@ Container Server application.
 
 
 
-> \*\*Note:\*\* Start \[Container Server](https://github.com/EugeneGouws/ContainerServer) 
+> \*\*Note:\*\* Start [Container Server](https://github.com/EugeneGouws/ContainerServer) 
 
 > first, otherwise the client will not connect.
 
