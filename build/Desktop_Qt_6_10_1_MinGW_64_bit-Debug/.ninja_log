@@ -1,0 +1,22 @@
+# ninja log v6
+14	1679	7933672472315651	Container_autogen/timestamp	89d5916d25670db1
+14	1679	7933672472315651	Container_autogen/mocs_compilation.cpp	89d5916d25670db1
+14	1679	7933672472315651	C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/Container_autogen/timestamp	89d5916d25670db1
+14	1679	7933672472315651	C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/Container_autogen/mocs_compilation.cpp	89d5916d25670db1
+1690	2085	7933672477763677	Container_autogen/EWIEGA46WW/qrc_resource.cpp	33fd424c4203cef7
+1690	2085	7933672477763677	C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/Container_autogen/EWIEGA46WW/qrc_resource.cpp	33fd424c4203cef7
+2136	7439	7933672478417480	CMakeFiles/Container.dir/pallet.cpp.obj	8ed79bcc7f557f25
+2141	7565	7933672478478513	CMakeFiles/Container.dir/backup.cpp.obj	fbc5cded06d01a4a
+2107	8074	7933672478137065	CMakeFiles/Container.dir/container.cpp.obj	285fbc46acdd0459
+2113	8186	7933672478192513	CMakeFiles/Container.dir/box.cpp.obj	595e82921a07aa6d
+2147	8752	7933672478529868	CMakeFiles/Container.dir/xmlwriter.cpp.obj	fb1675c5dc5add50
+2131	8994	7933672478369154	CMakeFiles/Container.dir/palletlist.cpp.obj	236041edead23e30
+2127	9014	7933672478328690	CMakeFiles/Container.dir/containerlist.cpp.obj	62f3eaa4a3257173
+2122	9339	7933672478293324	CMakeFiles/Container.dir/containerfactory.cpp.obj	48116f9eb799b1cc
+2117	9359	7933672478232879	CMakeFiles/Container.dir/cylinder.cpp.obj	81fb886053c90fac
+2152	9709	7933672478568855	CMakeFiles/Container.dir/Container_autogen/EWIEGA46WW/qrc_resource.cpp.obj	7b5d1e1ea2f76953
+2091	10139	7933672477980338	CMakeFiles/Container.dir/main.cpp.obj	d7361306ae38d7da
+2097	11083	7933672478036359	CMakeFiles/Container.dir/mainclient.cpp.obj	f23a1ab81796c72b
+2086	11103	7933672477925426	CMakeFiles/Container.dir/Container_autogen/mocs_compilation.cpp.obj	d52ef70ca5a68fa5
+2102	15906	7933672478076710	CMakeFiles/Container.dir/widget.cpp.obj	2c8ed1991c91f845
+15910	16402	7933672616165599	Container.exe	c6339ce7498b732f

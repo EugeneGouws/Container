@@ -1,0 +1,9 @@
+C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/Container.dir
+C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/Container_autogen_timestamp_deps.dir
+C:/Users/egouw/OneDrive/Documents/UNISA/COS3711/COS3711A3/Container/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/Container_autogen.dir
