@@ -34,6 +34,7 @@ MainWindow::MainWindow(QWidget *parent) :
     buttonBackupRestore(new QPushButton("Restore backup")),
     buttonBackupCreate(new QPushButton("Create backup")),
     buttonPostXML(new QPushButton("Post XML to network")),
+    buttonReconnect(new QPushButton("Reconnect to server")),
     displayPalletXML(new QTextEdit)
 {
     qDebug()<<"Mainwindow Widget Constructor";
@@ -103,6 +104,19 @@ MainWindow::MainWindow(QWidget *parent) :
     QWidget *postWidget(new QWidget);
     QVBoxLayout *postLayout(new QVBoxLayout);
     postWidget->setLayout(postLayout);
+
+    QHBoxLayout *ipLayout = new QHBoxLayout();
+    QLabel *ipLabel = new QLabel("Server IP:");
+    ipInput = new QLineEdit("127.0.0.1");
+    buttonConnect = new QPushButton("Connect");
+    connectionStatus = new QLabel("Not connected");
+    connectionStatus->setStyleSheet("color: red");
+    ipLayout->addWidget(ipLabel);
+    ipLayout->addWidget(ipInput);
+    ipLayout->addWidget(buttonConnect);
+    ipLayout->addWidget(connectionStatus);
+
+    postLayout->addLayout(ipLayout);
     postLayout->addWidget(buttonPostXML);
     postLayout->addWidget(displayPalletXML);
 
@@ -135,7 +149,9 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(buttonBackupRestore, SIGNAL(clicked(bool)), this, SLOT(onActionBackupRestoreTriggered()));
     connect(buttonBackupCreate, SIGNAL(clicked(bool)), this, SLOT(onActionBackupCreateTriggered()));
     connect(buttonPostXML, SIGNAL(clicked(bool)), this, SLOT(onActionSendXml()));
+    connect(buttonReconnect, SIGNAL(clicked(bool)), this, SLOT(reconnectToServer()));
     connect(watcher, &QFutureWatcher<QByteArray>::finished, this, &MainWindow::onActionUpdateXml);
+    connect(buttonConnect, SIGNAL(clicked(bool)), this, SLOT(onActionConnectTriggered()));
 
     //initial setup for container classes
     m_factory = new ContainerFactory();
@@ -145,13 +161,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Network setup
     socket = new QTcpSocket(this);
-    socket->connectToHost("127.0.0.1", 6164);
-    if(socket->waitForConnected(3000))
-    {
-        qDebug()<<"Socket connected";
-    }
-    else
-        qDebug()<<"Socket could not connect to server.";
+
 }
 
 void MainWindow::onActionAddBoxTriggered()
@@ -277,6 +287,36 @@ void MainWindow::onActionSendXml()
         socket->write(watcher->result());
         socket->flush();
         emit socket->readyRead();
+    }
+};
+
+void MainWindow::reconnectToServer()
+{
+    if(socket->state() != QAbstractSocket::ConnectedState)
+    {
+        socket->connectToHost("165.73.72.179", 6164);
+        if(socket->waitForConnected(3000))
+            qDebug() << "Socket connected";
+        else
+            qDebug() << "Socket could not connect to server.";
+    }
+    else
+        qDebug() << "Already connected";
+};
+
+void MainWindow::onActionConnectTriggered()
+{
+    socket->abort();
+    socket->connectToHost(ipInput->text(), 6164);
+    if(socket->waitForConnected(3000))
+    {
+        connectionStatus->setText("Connected");
+        connectionStatus->setStyleSheet("color: green");
+    }
+    else
+    {
+        connectionStatus->setText("Not connected");
+        connectionStatus->setStyleSheet("color: red");
     }
 }
 

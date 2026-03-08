@@ -18,6 +18,7 @@ private slots:
     void showAbout();
     void showHelp();
 
+
 private:
     void setupActions();
     void setupMenus();
